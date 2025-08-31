@@ -1,0 +1,117 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f8f9fa;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background: #16664f;
+  padding: 1.5%;
+}
+
+.logo {
+  color: #deeae6;
+  font-size: 1.4rem;
+  font-weight: bold;
+  font-family: "Abril Fatface", cursive;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #deeae6;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background 0.3s, color 0.3s;
+  font-family: "Abril Fatface", cursive;
+}
+
+.nav-links li a:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.nav-links li a.sobre {
+  background: #d2760e;
+  color: #deeae6;
+}
+
+.nav-links li a.sobre:hover {
+  background: #bf680b;
+}
+
+/* Banner */
+.banner-img {
+  height: 500px;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-caption h2 {
+  font-family: "Abril Fatface", cursive;
+  font-size: 2rem;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+}
+
+/* Cards */
+.cards .card {
+  transition: transform 0.3s, box-shadow 0.3s;
+  border-radius: 12px;
+}
+
+.cards .card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.cards .btn {
+  background-color: #16664f;
+  border: none;
+}
+
+.cards .btn:hover {
+  background-color: #0f4938;
+}
+
+/* Footer */
+footer {
+  background: #16664f;
+  color: #deeae6;
+  margin-top: 40px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  color: #deeae6;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #d2760e;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .banner-img {
+    height: 220px;
+  }
+}

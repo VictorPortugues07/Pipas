@@ -1,4 +1,3 @@
-// navbar.js
 document.addEventListener("DOMContentLoaded", () => {
   const navbarContainer = document.getElementById("navbar");
 

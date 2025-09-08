@@ -115,3 +115,54 @@ footer {
     height: 220px;
   }
 }
+
+.sobre-projeto {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.sobre-texto {
+  flex: 1;
+  text-align: left;
+}
+
+.sobre-texto h2 {
+  margin-bottom: 16px;
+  font-size: 2rem;
+  font-family: "Abril Fatface", cursive;
+}
+
+.sobre-texto p {
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.sobre-imagem {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.sobre-imagem img {
+  max-width: 350px;
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+@media (max-width: 900px) {
+  .sobre-projeto {
+    flex-direction: column;
+    gap: 24px;
+    text-align: center;
+  }
+  .sobre-texto {
+    text-align: center;
+  }
+  .sobre-imagem img {
+    max-width: 250px;
+  }
+}

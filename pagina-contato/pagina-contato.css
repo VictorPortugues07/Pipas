@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f8f9fa;
+  color: #333;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background: #16664f;
+  padding: 1.5%;
+}
+
+.logo {
+  color: #deeae6;
+  font-size: 1.4rem;
+  font-weight: bold;
+  font-family: "Abril Fatface", cursive;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #deeae6;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background 0.3s, color 0.3s;
+  font-family: "Abril Fatface", cursive;
+}
+
+.nav-links li a:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.nav-links li a.active {
+  background: #d2760e;
+  color: #deeae6;
+}
+
+.nav-links li a.active:hover {
+  background: #bf680b;
+}
+
+.container-contato {
+  background: #deeae6;
+  padding: 40px;
+  min-height: calc(100vh - 120px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+
+.contato-info {
+  flex: 1;
+  max-width: 400px;
+}
+
+.contato-info h2 {
+  font-family: "Abril Fatface", cursive;
+  font-size: 2.5rem;
+  margin-bottom: 25px;
+  color: #16664f;
+  line-height: 1.2;
+}
+
+.contato-info p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.whatsapp-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #25d366;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+}
+
+.whatsapp-btn:hover {
+  background: #128c7e;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+  color: white;
+  text-decoration: none;
+}
+
+.whatsapp-icon {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+}
+
+.contato-form {
+  flex: 1;
+  max-width: 500px;
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border: 2px solid #16664f;
+}
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #16664f;
+  font-size: 1rem;
+}
+
+.form-control {
+  width: 100%;
+  padding: 15px;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background: #f8f9fa;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: #16664f;
+  background: white;
+  box-shadow: 0 0 0 3px rgba(22, 102, 79, 0.1);
+}
+
+.form-control::placeholder {
+  color: #999;
+}
+
+.form-control.textarea {
+  min-height: 120px;
+  resize: vertical;
+  font-family: Arial, sans-serif;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 15px;
+  background: #16664f;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: "Abril Fatface", cursive;
+}
+
+.submit-btn:hover {
+  background: #0f4938;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(22, 102, 79, 0.3);
+}
+
+.contact-methods {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 2px solid #16664f;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+  padding: 10px;
+  background: rgba(22, 102, 79, 0.1);
+  border-radius: 10px;
+}
+
+.contact-icon {
+  width: 24px;
+  height: 24px;
+  color: #16664f;
+}
+
+.contact-item span {
+  font-weight: 500;
+  color: #16664f;
+}
+
+footer {
+  background: #16664f;
+  color: #deeae6;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: auto;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+  .container-contato {
+    flex-direction: column;
+    gap: 40px;
+    padding: 30px 20px;
+  }
+
+  .contato-info,
+  .contato-form {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .contato-info {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-links {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .contato-info h2 {
+    font-size: 2rem;
+  }
+
+  .contato-form {
+    padding: 30px 20px;
+  }
+
+  .container-contato {
+    padding: 20px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .whatsapp-btn {
+    padding: 12px 20px;
+    font-size: 1rem;
+  }
+
+  .contato-info h2 {
+    font-size: 1.8rem;
+  }
+
+  .contact-methods {
+    margin-top: 20px;
+  }
+}

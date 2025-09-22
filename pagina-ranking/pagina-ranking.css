@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f8f9fa;
+  color: #333;
+}
+
+header.navbar {
+  padding: 1%;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background: #16664f;
+  padding: 1.5%;
+}
+
+.logo {
+  color: #deeae6;
+  font-size: 1.4rem;
+  font-weight: bold;
+  font-family: "Abril Fatface", cursive;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #deeae6;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background 0.3s, color 0.3s;
+  font-family: "Abril Fatface", cursive;
+}
+
+.nav-links li a:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.nav-links li a.active {
+  background: #d2760e;
+  color: #deeae6;
+}
+
+.nav-links li a.active:hover {
+  background: #bf680b;
+}
+
+.container-ranking {
+  background: #deeae6;
+  padding: 40px;
+  min-height: calc(100vh - 120px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.container-ranking h2 {
+  font-family: "Abril Fatface", cursive;
+  font-size: 2.2rem;
+  margin-bottom: 15px;
+  color: #16664f;
+}
+
+.container-ranking p {
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+  max-width: 700px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.ranking-table {
+  width: 100%;
+  max-width: 800px;
+  border-collapse: collapse;
+  background: #fff;
+  margin: 20px auto 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.ranking-table thead {
+  background: #16664f;
+  color: #deeae6;
+}
+
+.ranking-table th {
+  padding: 15px;
+  text-align: center;
+  font-family: "Abril Fatface", cursive;
+  font-size: 1.1rem;
+  border: none;
+}
+
+.ranking-table tbody tr {
+  transition: background-color 0.3s;
+}
+
+.ranking-table tbody tr:nth-child(even) {
+  background: #f8f9fa;
+}
+
+.ranking-table tbody tr:hover {
+  background: #e8f5e8;
+}
+
+.ranking-table td {
+  border: 1px solid #e0e0e0;
+  padding: 15px;
+  text-align: center;
+  font-size: 1rem;
+  vertical-align: middle;
+}
+
+.ranking-position {
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: #16664f;
+  background: #f0f8f5;
+  border-right: 3px solid #16664f;
+}
+
+.medal {
+  font-size: 1.5rem;
+  margin-right: 5px;
+}
+
+.gold {
+  color: #ffd700;
+}
+.silver {
+  color: #c0c0c0;
+}
+.bronze {
+  color: #cd7f32;
+}
+
+.empty-row {
+  color: #999;
+  font-style: italic;
+}
+
+footer {
+  background: #16664f;
+  color: #deeae6;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: auto;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-links {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .container-ranking {
+    padding: 20px;
+  }
+
+  .container-ranking h2 {
+    font-size: 1.8rem;
+  }
+
+  .ranking-table {
+    font-size: 0.9rem;
+  }
+
+  .ranking-table th,
+  .ranking-table td {
+    padding: 10px 5px;
+  }
+
+  .ranking-position {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .ranking-table th:nth-child(n + 4),
+  .ranking-table td:nth-child(n + 4) {
+    display: none;
+  }
+}

@@ -186,3 +186,34 @@ footer {
     max-width: 250px;
   }
 }
+
+.midias {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.video {
+  width: 100%;
+  margin-top: 30px;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.texto-video {
+  position: absolute;
+  top: 50px; /* ajuste a distância do topo */
+  left: 20px; /* ajuste a distância da esquerda */
+  color: white; /* para contraste */
+  z-index: 10;
+  max-width: 40%; /* ajuste conforme o layout */
+  background: rgba(
+    0,
+    0,
+    0,
+    0.4
+  ); /* opcional: fundo semitransparente para melhor leitura */
+  padding: 20px;
+  border-radius: 5px;
+}

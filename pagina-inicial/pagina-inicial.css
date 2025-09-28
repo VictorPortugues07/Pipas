@@ -53,7 +53,8 @@ header.navbar {
   width: 100%;
 }
 
-.nav-links li a {
+.nav-links li a,
+.texto-video a {
   text-decoration: none;
   color: #deeae6;
   padding: 8px 12px;
@@ -66,7 +67,8 @@ header.navbar {
   background: rgba(255, 255, 255, 0.1);
 }
 
-.nav-links li a.active {
+.nav-links li a.active,
+.texto-video a.active {
   background: #d2760e;
   color: #deeae6;
 }
@@ -216,4 +218,73 @@ footer {
   ); /* opcional: fundo semitransparente para melhor leitura */
   padding: 20px;
   border-radius: 5px;
+}
+
+.blog {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  margin: 20px;
+  max-width: 600px;
+  flex-direction: column;
+}
+
+.card-img {
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+}
+
+.podium {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.podium-container {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.podium-card {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  padding: 10px;
+}
+
+.info {
+  flex: 1;
+}
+
+.bar-container {
+  width: 150px;
+  height: 20px;
+  background-color: #eee;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-left: 15px;
+}
+
+.bar {
+  height: 100%;
+  background-color: #4caf50;
 }

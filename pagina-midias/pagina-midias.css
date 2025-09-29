@@ -1,0 +1,227 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f8f9fa;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background: #16664f;
+  padding: 1.5%;
+}
+
+.logo {
+  color: #deeae6;
+  font-size: 1.4rem;
+  font-weight: bold;
+  font-family: "Abril Fatface", cursive;
+}
+
+header.navbar {
+  padding: 1%;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background: #16664f;
+  padding: 1.5%;
+}
+
+.logo {
+  color: #deeae6;
+  font-size: 1.4rem;
+  font-weight: bold;
+  font-family: "Abril Fatface", cursive;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.nav-links li a,
+.texto-video a,
+.graficos a {
+  text-decoration: none;
+  color: #deeae6;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background 0.3s, color 0.3s;
+  font-family: "Abril Fatface", cursive;
+}
+
+.nav-links li a:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.nav-links li a.active,
+.texto-video a.active,
+.graficos a.active {
+  background: #d2760e;
+  color: #deeae6;
+}
+
+.nav-links li a.active:hover {
+  background: #bf680b;
+}
+
+/* Footer */
+footer {
+  background: #16664f;
+  color: #deeae6;
+  margin-top: 40px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  color: #deeae6;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #d2760e;
+}
+
+/* ======== MODELO CLARO ======== */
+#video-claro {
+  background: #e9e9e9;
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+#video-claro .video-text .highlight-bar {
+  width: 100px;
+  height: 10px;
+  background: #ff9800;
+  margin-bottom: 15px;
+}
+
+#video-claro .video-text .title {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 2rem;
+  border-bottom: 2px solid #004d40;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+#video-claro .video-wrapper {
+  background: #004d40;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+/* ======== MODELO ESCURO ======== */
+#video-escuro {
+  background: #0f1a20;
+  border-radius: 10px;
+  padding: 2rem;
+  color: white;
+}
+
+#video-escuro .video-text .highlight-bar {
+  width: 100px;
+  height: 10px;
+  background: #ff9800;
+  margin-bottom: 15px;
+}
+
+#video-escuro .video-text .title {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 2rem;
+  border-bottom: 2px solid #2ecc71;
+  display: inline-block;
+  padding-bottom: 5px;
+  color: white;
+}
+
+#video-escuro .video-wrapper {
+  background: #2ecc71;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+#video-escuro p {
+  color: #ddd;
+}
+
+/* ======== FOTO COR 1 ======== */
+#foto-color1 {
+  background: #b2dfdb;
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+#foto-color1 .video-text .highlight-bar {
+  width: 100px;
+  height: 10px;
+  background: #ff9800;
+  margin-bottom: 15px;
+}
+
+#foto-color1 .video-text .title {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 2rem;
+  border-bottom: 2px solid #004d40;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+#foto-color1 .video-wrapper {
+  background: #004d40;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+#foto-color1 img {
+  border-radius: 8px;
+  max-width: 100%;
+  height: auto;
+}
+
+/* ======== FOTO COR 2 ======== */
+#foto-color2 {
+  background: #D4852B;
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+#foto-color2 .video-text .highlight-bar {
+  width: 100px;
+  height: 10px;
+  background: #D9D9D9;
+  margin-bottom: 15px;
+}
+
+#foto-color2 .video-text .title {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 2rem;
+  border-bottom: 2px solid #D9D9D9;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+#foto-color2 .video-wrapper {
+  background: #101820;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+#foto-color2 img {
+  border-radius: 8px;
+  max-width: 100%;
+  height: auto;
+}

@@ -11,11 +11,13 @@ body {
 }
 
 header.navbar {
-  padding: 1%;
+  padding: 0.7%;
 }
+
 .navbar {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background: #16664f;
   padding: 1.5%;
 }
@@ -37,10 +39,16 @@ header.navbar {
   width: 100%;
 }
 
+.nav-links li {
+  flex: 1;
+  text-align: center;
+}
+
 .nav-links li a {
+  display: block;
   text-decoration: none;
   color: #deeae6;
-  padding: 8px 12px;
+  padding: 10px 15px;
   border-radius: 5px;
   transition: background 0.3s, color 0.3s;
   font-family: "Abril Fatface", cursive;
@@ -222,7 +230,6 @@ footer {
   margin-top: auto;
 }
 
-/* Responsividade */
 @media (max-width: 1024px) {
   .container-contato {
     flex-direction: column;
@@ -248,9 +255,17 @@ footer {
   }
 
   .nav-links {
-    justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 10px;
+    width: 100%;
+  }
+
+  .nav-links li {
+    width: 100%;
+  }
+
+  .nav-links li a {
+    width: 100%;
   }
 
   .contato-info h2 {

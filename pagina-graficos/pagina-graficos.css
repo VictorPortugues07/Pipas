@@ -288,3 +288,25 @@ footer {
 .graficos-text {
   text-align: left;
 }
+body {
+  font-family: Arial, sans-serif;
+  background: #f8f9fa;
+  color: #333;
+}
+
+h2 {
+  font-family: "Abril Fatface", cursive;
+  color: #16664f;
+}
+
+.card {
+  border: none;
+  background: #fff;
+}
+
+.card h4 {
+  font-family: "Abril Fatface", cursive;
+  margin-bottom: 15px;
+  color: #16664f;
+  font-size: 1.2rem;
+}
